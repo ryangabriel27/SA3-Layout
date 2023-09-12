@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.text.DecimalFormat;
 
     public class Calculadora3 extends JPanel {
     public Calculadora3() {
@@ -42,7 +43,8 @@ import java.awt.*;
 
                 consumoTotal = distancia / consumoCarro;
                 custoTotal = consumoTotal * valorCombustivel;
-                display.setText("O custo total será de R$"+String.valueOf(custoTotal));
+                DecimalFormat formatoDecimal = new DecimalFormat("#.##");
+                display.setText("O custo total será de R$"+formatoDecimal.format(custoTotal));
                 
                 }
             } catch (Exception i){
