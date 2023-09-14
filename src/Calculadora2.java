@@ -17,50 +17,52 @@ public class Calculadora2 extends JPanel {
         tudo.add(cabecalho, BorderLayout.NORTH);
         cabecalho.setBackground(new Color(227, 218, 184));
         
-        JPanel panel = new JPanel(new GridLayout(4, 2));
+        JPanel panel = new JPanel(new GridLayout(4, 2,0,3));
         tudo.add(panel, BorderLayout.CENTER);
         panel.setBackground(new Color(227, 218, 184));
 
-        JLabel originalPriceLabel = new JLabel("Preço Original:");
-        panel.add(originalPriceLabel);
-        originalPriceLabel.setBackground(new Color(227, 218, 184));
+        JLabel precoOriginalLabel = new JLabel("Preço Original:");
+        panel.add(precoOriginalLabel);
+        precoOriginalLabel.setBackground(new Color(227, 218, 184));
 
-        JTextField originalPriceField = new JTextField();
-        originalPriceField.setSize(200, 100);
-        panel.add(originalPriceField);
+        JTextField campoPreco = new JTextField();
+        campoPreco.setSize(200, 100);
+        panel.add(campoPreco);
 
-       JLabel discountRateLabel = new JLabel("Taxa de Desconto (%):");
-        panel.add(discountRateLabel);
-        discountRateLabel.setBackground(new Color(227, 218, 184));
+       JLabel descontoLabel = new JLabel("Taxa de Desconto (%):");
+        panel.add(descontoLabel);
+        descontoLabel.setBackground(new Color(227, 218, 184));
 
-        JTextField discountRateField = new JTextField();
-        panel.add(discountRateField);
+        JTextField campoDesconto = new JTextField();
+        panel.add(campoDesconto);
 
-        originalPriceField.setSize(200, 100);
-        JButton calculateButton = new JButton("Calcular Desconto");
-        calculateButton.setBackground(new Color(150, 142, 107));
-        calculateButton.setForeground(new Color(255, 255, 255));
-        panel.add(calculateButton);
-        JLabel resultLabel = new JLabel();
-        panel.add(resultLabel);
+        campoPreco.setSize(200, 100);
+        JButton botaoCalcular = new JButton("Calcular Desconto");
+        botaoCalcular.setBackground(new Color(150, 142, 107));
+        botaoCalcular.setForeground(new Color(255, 255, 255));
+        panel.add(botaoCalcular);
+        JTextField display = new JTextField();
+        display.setEditable(false);
+        display.setBackground(new Color(255, 255,255));
+        panel.add(display);
 
-        // ao clicar no botão 'calculateButton'
-        calculateButton.addActionListener(e -> {
+        // ao clicar no botão 'botaoCalcular'
+        botaoCalcular.addActionListener(e -> {
             try {
-                double originalPrice = Double.parseDouble(originalPriceField.getText());
-                double discountRate = Double.parseDouble(discountRateField.getText());
+                double preco = Double.parseDouble(campoPreco.getText());
+                double desconto = Double.parseDouble(campoDesconto.getText());
 
-                if (discountRate < 0 || discountRate > 100) {
-                    resultLabel.setText("A taxa de desconto deve estar entre 0 e 100.");
+                if (desconto < 0 || desconto > 100) {
+                    display.setText("A taxa de desconto deve estar entre 0 e 100.");
                 } else {
-                    double discountAmount = (originalPrice * discountRate) / 100;
-                    double finalPrice = originalPrice - discountAmount;
+                    double discountAmount = (preco * desconto) / 100;
+                    double finalPrice = preco - discountAmount;
 
                     DecimalFormat df = new DecimalFormat("#.##");
-                    resultLabel.setText("Preço com Desconto: R$ " + df.format(finalPrice));
+                    display.setText("Preço com Desconto: R$ " + df.format(finalPrice));
                 }
             } catch (NumberFormatException ex) {
-                resultLabel.setText("Valores inválidos. Certifique-se de inserir números válidos.");
+                display.setText("Valores inválidos. Certifique-se de inserir números válidos.");
             }
         });
     }
