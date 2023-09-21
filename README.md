@@ -1,6 +1,6 @@
-RELATÓRIO - Situação de aprendizagem 3 (LayoutManager)
+# RELATÓRIO - Situação de aprendizagem 3 (LayoutManager)
 
-INTRODUÇÃO
+# INTRODUÇÃO
 
 Primeiramente, é de fundamental importância sabermos a diferença de cada tipo de elemento utilizado 
 no decorrer do código. De forma respectiva, estruturamos 3 Layouts no código, sendo eles, o FlowLayout que
@@ -26,7 +26,7 @@ domínio que o programador tem da posição dos componentes com alguns
 LayoutManagers. O projeto se converge com utilização desses Layouts(FlowLayout, BorderLayout, GridLayout, BoxLayout)
 aplicados em 3 calculadoras(IMC, Desconto, Custo de Viagem) JAVA diferentes. 
 
-OBJETIVO
+# OBJETIVO
 
 Os objetivos que são almejados com a realização desse programa é, em suma, 
 compreender os conceitos de layouts e a importância de escolher o layout adequado
@@ -36,7 +36,7 @@ visando sempre desenvolver nossas habilidades em programação. além disso, é 
 a capacidade de identificação dos critérios críticos e desejáveis na escolha de layouts para 
 projetos de interface gráfica.
 
-DESENVOLVIMENTO
+# DESENVOLVIMENTO
 
 Em prol do desenvolvimento da atividade, foi subdividido a pasta do projeto em 5 arquivos, sendo eles, O App.java,
 Calculadora1.java, Calculadora2.java, Calculadora3.java, JFrame.java e o JTabbedPane.java, isando uma maior variedade de dados,
@@ -51,6 +51,6 @@ que por sua vez, possui um Layout do tipo GridLayout para que obtenhamos uma mel
 Continuamente, a 3° calculadora, assim como a segunda, segue a mesma metodologia da primeira como base. Porém, ela possui somente alguns detalhes visuais, por exemplo,
 o JPanel "campos" que possui um layout do tipo GridLayout , nessa contém 3 linhas e 2 colunas ; já na primeira este mesmo JPanel com o mesmo tipo de Layout contém 2 linhas e 2 colunas.
 
-CONCLUSÃO
+# CONCLUSÃO
 
 Perante todos estes aspectos, concluimos que, a aplicabilidade destes elementos de LayoutManager convergem diretamente na parte estrutural do software, portanto, fica evidente a praticidade e eficácia de ser utilizado dentre os códigos em JAVA. Além disso, o grupo pode analisar esses compostos e suas respectivas funcionalidades, desenvolvendo e aplicando esses conceitos nas 3 calculadoras. 
