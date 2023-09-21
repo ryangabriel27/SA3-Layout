@@ -57,7 +57,7 @@ public class Calculadora1 extends JPanel {
                 double altura = Double.parseDouble(campoAltura.getText());
 
                 imc = peso / (altura * altura);
-                display.setText("Seu IMC é de: "+String.valueOf(imc));
+                display.setText("Seu IMC é de: "+String.format("%.2f",imc));
                 
                 }
             } catch (ArithmeticException i) {
