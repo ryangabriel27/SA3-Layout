@@ -1,4 +1,4 @@
-# RELATÓRIO - Situação de aprendizagem 3 (LayoutManager)
+`RELATÓRIO - Situação de aprendizagem 3 (LayoutManager)`
 
 # INTRODUÇÃO
 
@@ -11,15 +11,11 @@ Layout default para a maioria das aplicações gráficas. Quando se adiciona um 
 adicionado. Ex: add(butOK, BorderLayout.WEST)
 Divide um container em cinco regiões:
 
-– BorderLayout.CENTER
-
-– BorderLayout.NORTH
-
-– BorderLayout.EAST
-
-– BorderLayout.SOUTH
-
-– BorderLayout.WEST
+– BorderLayout.CENTER  
+– BorderLayout.NORTH  
+– BorderLayout.EAST  
+– BorderLayout.SOUTH  
+– BorderLayout.WEST  
 
 
 Como abordado no decorrer das aulas, a linguagem JAVA assegura que programas sejam extremamente
