@@ -10,11 +10,17 @@ igual tamanho. Permite definir um vetor ou matriz de células nas quais os compo
 Layout default para a maioria das aplicações gráficas. Quando se adiciona um componente, é necessário especificar em qual das áreas ele deve ser
 adicionado. Ex: add(butOK, BorderLayout.WEST)
 Divide um container em cinco regiões:
+
 – BorderLayout.CENTER
+
 – BorderLayout.NORTH
+
 – BorderLayout.EAST
+
 – BorderLayout.SOUTH
-– BorderLayout. WEST
+
+– BorderLayout.WEST
+
 
 Como abordado no decorrer das aulas, a linguagem JAVA assegura que programas sejam extremamente
 portáveis, a filosofia da interface visa também ser extremamente adaptável.
