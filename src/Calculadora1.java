@@ -60,7 +60,10 @@ public class Calculadora1 extends JPanel {
                 display.setText("Seu IMC é de: "+String.valueOf(imc));
                 
                 }
-            } catch (Exception i){
+            } catch (ArithmeticException i) {
+                display.setText("Preencha os campos corretamente , por favor");
+            } 
+            catch (Exception i){
                 display.setText("Preencha os campos corretamente , por favor");
             }
             
