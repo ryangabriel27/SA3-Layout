@@ -1,4 +1,4 @@
-`RELATÓRIO - Situação de aprendizagem 3 (LayoutManager)`
+`# RELATÓRIO - Situação de aprendizagem 3 (LayoutManager)`
 
 # INTRODUÇÃO
 
